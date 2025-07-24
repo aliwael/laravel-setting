@@ -1,8 +1,8 @@
 # Persistent settings package for Laravel
 
-[![Downloads](https://poser.pugx.org/akaunting/laravel-setting/d/total.svg)](https://github.com/akaunting/laravel-setting)
+[![Downloads](https://poser.pugx.org/aliwael/laravel-setting/d/total.svg)](https://github.com/aliwael/laravel-setting)
 [![StyleCI](https://styleci.io/repos/101231817/shield?style=flat&branch=master)](https://styleci.io/repos/101231817)
-[![License](https://poser.pugx.org/akaunting/laravel-setting/license.svg)](LICENSE.md)
+[![License](https://poser.pugx.org/aliwael/laravel-setting/license.svg)](LICENSE.md)
 
 This package allows you to save settings in a more persistent way. You can use the database and/or json file to save your settings. You can also override the Laravel config.
 
@@ -23,7 +23,7 @@ This package allows you to save settings in a more persistent way. You can use t
 Run the following command:
 
 ```bash
-composer require akaunting/laravel-setting
+composer require aliwael/laravel-setting
 ```
 
 ### 2. Register (for Laravel < 5.5)
@@ -31,13 +31,13 @@ composer require akaunting/laravel-setting
 Register the service provider in `config/app.php`
 
 ```php
-Akaunting\Setting\Provider::class,
+aliwael\Setting\Provider::class,
 ```
 
 Add alias if you want to use the facade.
 
 ```php
-'Setting' => Akaunting\Setting\Facade::class,
+'Setting' => aliwael\Setting\Facade::class,
 ```
 
 ### 3. Publish
@@ -154,7 +154,7 @@ setting()->setConstraint(function($query, $insert) {
 This package uses the Laravel `Manager` class under the hood, so it's easy to add your own storage driver. All you need to do is extend the abstract `Driver` class, implement the abstract methods and call `setting()->extend`.
 
 ```php
-class MyDriver extends Akaunting\Setting\Contracts\Driver
+class MyDriver extends aliwael\Setting\Contracts\Driver
 {
 	// ...
 }
@@ -174,7 +174,7 @@ Pull requests are more than welcome. You must follow the PSR coding standards.
 
 ## Security
 
-If you discover any security related issues, please email security@akaunting.com instead of using the issue tracker.
+If you discover any security related issues, please email security@aliwael.com instead of using the issue tracker.
 
 ## Credits
 
