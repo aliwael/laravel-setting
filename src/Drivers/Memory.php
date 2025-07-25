@@ -1,8 +1,8 @@
 <?php
 
-namespace Akaunting\Setting\Drivers;
+namespace aliwael\Setting\Drivers;
 
-use Akaunting\Setting\Contracts\Driver;
+use aliwael\Setting\Contracts\Driver;
 
 class Memory extends Driver
 {

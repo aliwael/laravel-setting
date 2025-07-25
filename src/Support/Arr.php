@@ -1,6 +1,6 @@
 <?php
 
-namespace Akaunting\Setting\Support;
+namespace aliwael\Setting\Support;
 
 class Arr
 {

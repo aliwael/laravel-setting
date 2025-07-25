@@ -1,8 +1,8 @@
 <?php
 
-namespace Akaunting\Setting;
+namespace aliwael\Setting;
 
-use Akaunting\Setting\Middleware\AutoSaveSetting;
+use aliwael\Setting\Middleware\AutoSaveSetting;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Arr;
 use Illuminate\View\Compilers\BladeCompiler;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Akaunting\Setting;
+namespace aliwael\Setting;
 
 use Illuminate\Support\Facades\Facade as BaseFacade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Akaunting\Setting\Middleware;
+namespace aliwael\Setting\Middleware;
 
 use Closure;
 

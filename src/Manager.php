@@ -1,10 +1,10 @@
 <?php
 
-namespace Akaunting\Setting;
+namespace aliwael\Setting;
 
-use Akaunting\Setting\Drivers\Database;
-use Akaunting\Setting\Drivers\Json;
-use Akaunting\Setting\Drivers\Memory;
+use aliwael\Setting\Drivers\Database;
+use aliwael\Setting\Drivers\Json;
+use aliwael\Setting\Drivers\Memory;
 use Illuminate\Support\Manager as BaseManager;
 
 class Manager extends BaseManager

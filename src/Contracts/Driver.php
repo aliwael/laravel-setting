@@ -1,8 +1,8 @@
 <?php
 
-namespace Akaunting\Setting\Contracts;
+namespace aliwael\Setting\Contracts;
 
-use Akaunting\Setting\Support\Arr;
+use aliwael\Setting\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 
 abstract class Driver
