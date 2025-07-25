@@ -1,10 +1,12 @@
-# Persistent settings package for Laravel
+# Persistent settings package for Laravel (يدعم Laravel 12)
 
 [![Downloads](https://poser.pugx.org/aliwael/laravel-setting/d/total.svg)](https://github.com/aliwael/laravel-setting)
 [![StyleCI](https://styleci.io/repos/101231817/shield?style=flat&branch=master)](https://styleci.io/repos/101231817)
 [![License](https://poser.pugx.org/aliwael/laravel-setting/license.svg)](LICENSE.md)
 
 This package allows you to save settings in a more persistent way. You can use the database and/or json file to save your settings. You can also override the Laravel config.
+
+**يدعم Laravel 12 بشكل كامل.**
 
 * Driver support
 * Helper function
@@ -144,8 +146,8 @@ If you need more fine-tuned control over which data gets queried, you can use th
 
 ```php
 setting()->setConstraint(function($query, $insert) {
-	if ($insert) return;
-	$query->where(/* ... */);
+    if ($insert) return;
+    $query->where(/* ... */);
 });
 ```
 
@@ -156,11 +158,11 @@ This package uses the Laravel `Manager` class under the hood, so it's easy to ad
 ```php
 class MyDriver extends aliwael\Setting\Contracts\Driver
 {
-	// ...
+    // ...
 }
 
 app('setting.manager')->extend('mydriver', function($app) {
-	return $app->make('MyDriver');
+    return $app->make('MyDriver');
 });
 ```
 
